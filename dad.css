@@ -1,0 +1,337 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9da;
+  color: #333;
+  
+}
+
+/* Navbar */
+header{
+  position:sticky;
+  top:0;
+  left:0;
+  width:100%;
+  z-index: 1000;
+}
+
+.navbar {
+  background: #002244;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  
+}
+.navbar img{
+  border-radius: 10%;
+}
+
+.logo {
+  color: #ffcc00;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #ffcc00;
+}
+#navToggle{
+  display:none;
+  background:none;
+  border:none;
+  font-size:1.75rem;
+  line-height:1;
+  color:#ffcc00;
+  cursor:pointer;
+}
+.lang-switch{
+  background: #004080;
+      color: white;
+      border: none;
+      padding: 8px;
+      /* margin: 5px; */
+      border-radius: 5px;
+      cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  max-width: 100%;
+  background: url("/img/a.png") center/cover no-repeat;
+  color: #ffcc00;
+  text-align: center;
+  padding: 5rem 2rem;
+  
+}
+.hero p, .hero h2{
+  font-weight: 500;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0px 2px 2px #000000;
+}
+p {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #2c3e50; /* dark professional text */
+  background-color: #f4f6f7; /* subtle light gray background */
+  padding: 20px;
+  border-left: 5px solid #0077b6; /* corporate accent line */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #ffcc00;
+  color: #002244;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #e6b800;
+}
+
+/* Services */
+.services{
+  text-align: center;
+}
+.service-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.card img {
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  display: block;
+  margin: 5px;
+}
+
+.card h3 {
+  margin-top: 0.5rem;
+  color: #002244;
+}
+
+
+
+/* Why Us */
+.why-us {
+  background: #002244;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-us ul {
+  list-style: none;
+  margin-top: 1rem;
+  text-align: justify;
+  /* margin-left: 36rem; */
+}
+
+.why-us li {
+  margin: 0.5rem 0;
+}
+
+/* About */
+.about {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about h2 {
+  color: #002244;
+  margin-bottom: 1rem;
+}
+
+.about h3 {
+  color: #ffcc00;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+/* Quote Form */
+.quote-form {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.quote-form h2 {
+  color: #002244;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.quote-form p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+input, select, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button.btn {
+  background: #ffcc00;
+  color: #002244;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 0.75rem;
+  transition: background 0.3s;
+}
+
+button.btn:hover {
+  background: #e6b800;
+}
+/* WhatsApp Contact */
+.whatsapp-contact {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #25D366;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background: #1da851;
+}
+
+/* Animation */
+
+.slide-in-top {
+  animation: slideTop 3.5s ease-out;
+  position: relative;
+}
+@keyframes slideTop {
+  from { top: -100px; opacity: 0; }
+  to { top: 0; opacity: 1; }
+}
+
+.slide-in-left {
+  animation: slideLeft 2.5s ease-out;
+  position: relative;
+}
+@keyframes slideLeft {
+  from { left: -100%; opacity: 0; }
+  to { left: 0; opacity: 1; }
+}
+.fade-out {
+  animation: fadeOut 2s ease-in-out;
+}
+@keyframes fadeOut {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Media Query */
+@media (max-width:768px){
+
+  .nav-links{
+    position:fixed;
+    top:64px;
+    right:-100%;
+    width:100%;
+    height:calc(100% - 64px);
+    flex-direction:column;
+    background:#002244;;
+    padding:2rem 1.25rem;
+    transition:right .3s ease;
+    box-shadow:-2px 0 8px rgba(0,0,0,.05);
+  }
+  .nav-links.open{
+    right:0;
+  }
+  #navToggle{
+    display:block;
+  }
+  .service-cards{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .card img {
+    width: 250px;
+    height: 150px;
+    
+  }
+  .logo{
+    font-size: 20px;
+  }
+}
+

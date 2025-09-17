@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>make your order - Sumji Constructions
+  </title>
+  <link rel="stylesheet" href="dad.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <img src="sc.png" width="70px" alt="">
+    <h1 class="logo">Sumji Constructions</h1>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="dad.html">Home</a></li>
+        <li><a href="slide.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="form.html">Order</a></li>
+      </ul>
+      <button id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- Form Section -->
+  <section class="quote-form slide-in-left">
+    <h2>Make your order</h2>
+    <p>Fill in the details below and we’ll get back to you quickly.</p>
+
+    <form action="mailto:isahahmed798@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="service">Service Needed:</label>
+      <select id="service" name="service" required>
+        <option value="plaster-sand">Plaster Sand</option>
+        <option value="sharp-sand">Sharp Sand</option>
+        <option value="laterite-sand">Laterite Sand</option>
+        <option value="gravel">Gravel</option>
+        <option value="evacuation">Evacuation</option>
+        <option value="tipper-for-sale">Tipper for sale</option>
+      </select>
+
+      <label for="message">Additional Details:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit" class="btn">Submit Request</button>
+    </form>
+    <div class="whatsapp-contact">
+  <p>Prefer chatting with us directly?</p>
+  <a href="https://wa.me/2348039093803" target="_blank" class="whatsapp-btn">
+    💬 Chat on WhatsApp
+  </a>
+</div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="sc.png" width="200px" alt="">
+    <p>Contact: +234 8039093803 | Email: isahahmed798@gmail.com</p>
+    <p>&copy; 2025 Sumji Constructions. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

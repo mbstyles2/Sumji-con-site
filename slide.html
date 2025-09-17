@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sumji Construction | Services</title>
+  <link rel="stylesheet" href="dad.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      /* text-align: center;
+      margin: 0;
+      padding: 0; */
+    }
+    .slideshow-container {
+      max-width: 800px;
+      margin: 50px auto;
+      position: relative;
+      border: 2px #ffcc00 solid;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .slide {
+      display: none;
+    }
+    .slide img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .caption {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 45%;
+      width: auto;
+      padding: 10px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.3s;
+      user-select: none;
+    }
+    .prev { left: 0; }
+    .next { right: 0; }
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.5);
+    }
+    .img{
+      
+      border-radius: 14px;
+    }
+  </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+      <img src="sc.png" width="70px" alt="">
+      <h1 class="logo">Sumji Constructions</h1>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="dad.html">Home</a></li>
+          <li><a href="slide.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="form.html">Order</a></li>
+        </ul>
+        <button id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+      </nav>
+    </header>
+
+ 
+    <div class="slide">
+      <img src="images\IMG-20250907-WA0002.jpg"  alt="Slide 1">
+      
+    </div>
+    <div class="slide">
+      <img src="images\IMG-20250907-WA0003.jpg" alt="Slide 2">
+      
+    </div>
+    <div class="slide">
+      <img src="images\IMG-20250907-WA0005.jpg" alt="Slide 3">
+      
+    </div>
+    <div class="slide">
+      <img src="images\IMG-20250907-WA0002.jpg" alt="Slide 4">
+      <!-- <div class="caption">Here’s the 4 slide</div> -->
+    </div>
+    <div class="slide">
+      <img src="images\IMG-20250907-WA0007.jpg" alt="Slide 5">
+      <!-- <div class="caption">Here’s the 5 slide</div> -->
+    </div>
+    <div class="slide">
+      <img src="images\c.png" alt="Slide 6">
+      <!-- <div class="caption">Here’s the 5 slide</div> -->
+    </div>
+    <div class="slide">
+      <img src="images\d.png" alt="Slide 7">
+      <!-- <div class="caption">Here’s the 5 slide</div> -->
+    </div>
+    <div class="slide">
+      <img src="images\f.png" alt="Slide 8">
+      <!-- <div class="caption">Here’s the 5 slide</div> -->
+    </div>
+    <div class="slide">
+      <img src="images\af.png" alt="Slide 9">
+      <!-- <div class="caption">Here’s the 5 slide</div> -->
+     </div>
+  <div class="slide">
+    <img src="images\a.png" alt="slide 10">
+  </div>
+    <a class="prev" onclick="changeSlide(-1)">❮</a>
+    <a class="next" onclick="changeSlide(1)">❯</a>
+  </div>
+
+
+  <!-- <img src="/img/a.png" class="img" width="600px" alt="truck"> -->
+
+  <footer>
+    <hr>
+    <br>
+    <img src="sc.png" width="200px" alt="">
+    <p>Contact: +234 8039093803 | Email: isahahmed798@gmail.com</p>
+    <p>&copy; 2025 Sumji Constructions. All rights reserved.</p>
+  </footer>
+
+  
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.style.display = 'none');
+      slides[index].style.display = 'block';
+    }
+
+    function changeSlide(n) {
+      slideIndex = (slideIndex + n + slides.length) % slides.length;
+      showSlide(slideIndex);
+    }
+
+    // Auto show first slide
+    showSlide(slideIndex);
+
+    setInterval(() =>{
+      changeSlide(1);
+    }, 5000);
+  </script>'
+  
+  <script src="script.js"></script>
+</body>
+</html>
