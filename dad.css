@@ -77,7 +77,7 @@ header{
 /* Hero Section */
 .hero {
   max-width: 100%;
-  background: url("/img/a.png") center/cover no-repeat;
+  background: url("/images/a.png") center/cover no-repeat;
   color: #ffcc00;
   text-align: center;
   padding: 5rem 2rem;
@@ -334,4 +334,5 @@ button.btn:hover {
     font-size: 20px;
   }
 }
+
 
